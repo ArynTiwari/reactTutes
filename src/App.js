@@ -4,11 +4,11 @@ import { store } from "./store/store";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
 import Navbar from "./Components/Navbar";
-
+import StarRating from "./Components/StarRating";
 function App() {
   return (
     <div className="App">
-      <Provider store={store}>
+      {/* <Provider store={store}>
         <BrowserRouter>
           <Navbar />
           <Routes>
@@ -16,7 +16,8 @@ function App() {
             <Route path="/cart" element={<Cart />}></Route>
           </Routes>
         </BrowserRouter>
-      </Provider>
+      </Provider> */}
+      <StarRating />
     </div>
   );
 }
